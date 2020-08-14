@@ -19,9 +19,10 @@ function SearchPage() {
 
     return (
 
+        <div>
         <SearchBar setSearchResults={setSearchResults} />
         <BookList book={searchResults}/>
-
+        </div>
     )
 
-}
+}       
