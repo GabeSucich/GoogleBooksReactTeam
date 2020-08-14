@@ -15,5 +15,13 @@ export default {
 
     deleteBook(id) {
         return axios.delete("/api/books/" + id)
+    },
+
+    searchBooks(title) {
+        return axios.get("/google/newbooks/" + titles)
     }
 }
+
+//searchBooks(title).then(books => {
+//  books.map(book => <ListItem book={book}/>)
+//})

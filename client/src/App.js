@@ -6,8 +6,10 @@ import NoMatch from "./pages/NoMatch"
 import logo from "./logo.svg";
 import { BookProvider } from "./utils/GlobalState"
 import "./App.css";
+import API from "./utils/API"
 
 function App() {
+
   return (
     <Router>
       <BookProvider>
