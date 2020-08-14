@@ -5,7 +5,7 @@ function BookList(props) {
     return (
         <ul>
            {props.searchResults.map(book => {
-               <ListItem book ={book}/>
+               <ListItem book={book}/>
            })}
         </ul>
     )
