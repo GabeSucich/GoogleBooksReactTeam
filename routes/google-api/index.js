@@ -6,7 +6,7 @@ const axios = require("axios")
 router.get("/newbooks/:title", (req, res) => {
     var titleQuery = req.params.title
     axios.get("https://www.googleapis.com/books/v1/volumes?q=" + titleQuery).then(response => {
-        res.json(response.items)
+        res.json(response.data.items)
     })
 })
 

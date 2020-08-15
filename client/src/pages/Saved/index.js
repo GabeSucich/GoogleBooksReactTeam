@@ -3,7 +3,9 @@ import {UseBookContext} from "../../utils/GlobalState"
 
 function Saved() {
 
-    const [state, dispatch] = useBookContext()
-    
+    const [state, dispatch] = UseBookContext()
+
 
 }
+
+export default Saved

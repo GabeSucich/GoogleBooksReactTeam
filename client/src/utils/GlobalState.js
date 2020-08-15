@@ -26,21 +26,14 @@ const reducer = (state, action) => {
     }
 }
 
-//When I want to set new book to current book:
-// -----> dispatch({action: SET_CURRENT_BOOK}, book: <new Current Book object>})
-
-// When I want to refresh my database of books:
-// -----> dispatch({action: UPDATE_BOOKS, books: <array of books from API call>})
-
-const BookProvider = () => {
+export const BookProvider = () => {
 
     const [state, dispatch] = useReducer(reducer, {})
 
-    return <BookContext.Provider value={[state, dispatch]}/>
+    return <Provider value={[state, dispatch]}/>
 }
 
-const UseBookContext = () => {
+export const UseBookContext = () => {
     return useContext(BookContext)
 }
 
-export default {BookProvider, UseBookContext}

@@ -18,7 +18,7 @@ export default {
     },
 
     searchBooks(title) {
-        return axios.get("/google/newbooks/" + titles)
+        return axios.get("/google/newbooks/" + title)
     }
 }
 
